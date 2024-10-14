@@ -141,6 +141,13 @@ namespace MvcMovie.Controllers
 
             return View(movie);
         }
+        /*
+        // POST: Movies/Delete/6
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id, bool notUsed)
+        igy is nezhet ki a deleteconfirmed helyett a formatum,de nekem nem tetszik annyira,mivel szerintem kevésbé átlátható
+        */
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
